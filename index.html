@@ -24,17 +24,15 @@
             
             <div class="search">
                 <form action="https://www.google.com/search?">
-                    <input type="text" name="q" id="search" placeholder="Search">
+                    <input type="text" name="q" id="search" autofocus="on">
                 </form>
             </div>
         </div>
         
         <div class="buttons">
-            <button type="submit" form="search">Google Search</button>
-            <button>I'm Feeling Lucky</button>
+            <button class="searchbtn">Google Search</button>
+            <button class="luckybtn">I'm Feeling Lucky</button>
         </div>
-        <!-- create a text input that will search for the user input on google when then this a button -->
-
     </main>
 
     <footer>
@@ -51,5 +49,20 @@
         </ul>
     </footer>
 
+    <script>
+        const search = document.getElementById('search');
+        const searchbtn = document.querySelector('.searchbtn');
+        const luckybtn = document.querySelector('.luckybtn');
+
+        searchbtn.addEventListener('click', () => {
+            // direct user to google search page with the user input
+            window.location.href = `https://www.google.com/search?q=${search.value}`;
+        });
+
+        luckybtn.addEventListener('click', () => {
+            // direct user to google search page with the user input and the "I'm feeling lucky" button
+            window.location.href = `https://www.google.com/search?q=${search.value}&btnI`;
+        });
+    </script>
 </body>
 </html>
