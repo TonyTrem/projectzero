@@ -20,56 +20,75 @@
     
     <main class="advanced_main">
         <div class="advancedsearch">
-            
-            <div class="advanced_search_title">
-                Advanced Search
-            </div> 
+            <table>
+                <tr>
+                    <td>
+                        <div class="advanced_search_title">
+                            Advanced Search
+                        </div> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="find_pages_with">
+                            Find pages with...<span class="searchtip">To do this in the search box</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="advanced_search_item">
+                            <label for="all_these_words">all these words:</label>
+                            <input type="text" name="all_these_words" id="all_these_words">
+                            <div class="searchtip">
+                                Type the important words: 
+                                <span class="search_tip_code">tri-colour rat terrier</span>
+                            </div>                    
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="advanced_search_item">
+                            <label for="this_exact_word_or_phrase">this exact word or phrase:</label>
+                            <input type="text" name="this_exact_word_or_phrase" id="this_exact_word_or_phrase">
+                            <div class="searchtip">
+                                Put exact words in quotes: 
+                                <span class="search_tip_code">"rat terrier"</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="advanced_search_item">
+                            <label for="any_of_these_words">any of these words:</label>
+                            <input type="text" name="any_of_these_words" id="any_of_these_words">
+                            <div class="searchtip">
+                                Type OR between all the words you want: 
+                                <span class="search_tip_code">miniature OR standard</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
 
-            <div class="find_pages_with">
-                Find pages with...<span class="searchtip">To do this in the search box</span>
-            </div>
-
-            <div class="advanced_search_item">
-                <label for="all_these_words">all these words:</label>
-                <input type="text" name="all_these_words" id="all_these_words">
-                <div class="searchtip">
-                    Type the important words: 
-                    <span class="search_tip_code">tri-colour rat terrier</span>
-                </div>                    
-            </div>
-
-            <div class="advanced_search_item">
-                <label for="this_exact_word_or_phrase">this exact word or phrase:</label>
-                <input type="text" name="this_exact_word_or_phrase" id="this_exact_word_or_phrase">
-                <div class="searchtip">
-                    Put exact words in quotes: 
-                    <span class="search_tip_code">"rat terrier"</span>
-                </div>
-            </div>
-
-            <div class="advanced_search_item">
-                <label for="any_of_these_words">any of these words:</label>
-                <input type="text" name="any_of_these_words" id="any_of_these_words">
-                <div class="searchtip">
-                    Type OR between all the words you want: 
-                    <span class="search_tip_code">miniature OR standard</span>
-                </div>
-            </div>
-
-            <div class="advanced_search_item">
-                <label for="none_of_these_words">none of these words:</label>
-                <input type="text" name="none_of_these_words" id="none_of_these_words">
-                <div class="searchtip">
-                    Put a minus sign just before words that you don't want: 
-                    <span class="search_tip_code">-rodent -"Jack Russell"</span>
-                </div>
-            </div>
-
-
+                <tr>
+                    <td>
+                        <div class="advanced_search_item">
+                            <label for="none_of_these_words">none of these words:</label>
+                            <input type="text" name="none_of_these_words" id="none_of_these_words">
+                            <div class="searchtip">
+                                Put a minus sign just before words that you don't want: 
+                                <span class="search_tip_code">-rodent -"Jack Russell"</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </main>
 
-    <footer>
+    <footer class="advanced_footer">
         <ul>
             <li><a href="" target="_blank">Privacy</a></li>
             <li><a href="" target="_blank">Terms</a></li>
