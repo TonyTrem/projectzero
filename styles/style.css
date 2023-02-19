@@ -49,6 +49,13 @@ li {
     padding: 0.5em;    
 }
 
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 30px;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     font: 13px/27px Roboto,Arial,sans-serif;
@@ -126,6 +133,7 @@ button:hover {
     display: inline;
     justify-self: left;
     font-family: arial, sans-serif;
+    width: 100%
 }
 
 .advanced_search_title {
@@ -190,6 +198,40 @@ button:hover {
     left: 760px;
     font-size: 11px;
     font-weight: 400;
+}
+.advanced_searchbtn {
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    outline: 0;
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    padding: 0 12px;
+    margin: 10px 0;
+    user-select: none;
+    line-height: 100%;
+    height: 30px;
+    min-width: 120px;
+    position: relative;
+    left: 630px;
+}
+
+.advanced_searchbtn:hover {
+    background-color: #357ae8;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    border: 1px solid #2f5bb7;
+}
+
+.advanced_searchbtn:active {
+    background-color: #285ebe;
+    background-image: -webkit-linear-gradient(top,#285ebe,#285ebe);
+    border: 1px solid #1b4173;
 }
 
 .search_tip_code {
