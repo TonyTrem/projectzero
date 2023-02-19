@@ -139,7 +139,7 @@ button:hover {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 13px 35px;
+    margin: 12px 35px;
     font-size: 13px;
     font-weight: 400;
     color: #3c4043;
@@ -178,6 +178,10 @@ button:hover {
     align-items: start;
 }
 
+.advanced_footer {
+    justify-content: right;
+}
+
 .searchtip {
     position: absolute;
     left: 760px;
@@ -194,14 +198,6 @@ button:hover {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-}
-
-td,
-th,
-tr,
-table {
-    padding: 0;
-    margin: 0;
 }
 
 .find_pages_with {
