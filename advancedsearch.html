@@ -9,60 +9,76 @@
 </head>
 <body>
     
-    <header>
+    <header class="advanced_header">
+        <div>
+            <img class="advanced_logo" src="images/logo.png" alt="logo">
+        </div> 
         <ul>
-            <li><a href="advancedsearch.html">Advanced Search</a></li>
-            <li><a href="imagesearch.html">Image Search</a></li>
+            <li><a href="index.html">Home</a></li>
         </ul>
     </header>
     
     <main>
-        <div class="logo">
-            <img src="images/logo.png" alt="logo">
-        </div>
-        <div class="searchcontainer">
+        <div class="advancedsearch">
             
-            <div class="search">
-                <form action="https://www.google.com/search?">
-                    <input type="text" name="q" id="search" autofocus="on">
-                </form>
+            <div class="advanced_search_title">
+                Advanced Search
+            </div>            
+            
+            <hr>
+
+            <div class="find_pages_with">
+                Find pages with...<span class="searchtip">To do this in the search box</span>
             </div>
-        </div>
-        
-        <div class="buttons">
-            <button class="searchbtn">Google Search</button>
-            <button class="luckybtn">I'm Feeling Lucky</button>
+
+            <div class="advanced_search_item">
+                <label for="all_these_words">all these words:</label>
+                <input type="text" name="all_these_words" id="all_these_words">
+                <div class="searchtip">
+                    Type the important words: 
+                    <span class="search_tip_code">tri-colour rat terrier</span>
+                </div>                    
+            </div>
+
+            <div class="advanced_search_item">
+                <label for="this_exact_word_or_phrase">this exact word or phrase:</label>
+                <input type="text" name="this_exact_word_or_phrase" id="this_exact_word_or_phrase">
+                <div class="searchtip">
+                    Put exact words in quotes: 
+                    <span class="search_tip_code">"rat terrier"</span>
+                </div>
+            </div>
+
+            <div class="advanced_search_item">
+                <label for="any_of_these_words">any of these words:</label>
+                <input type="text" name="any_of_these_words" id="any_of_these_words">
+                <div class="searchtip">
+                    Type OR between all the words you want: 
+                    <span class="search_tip_code">miniature OR standard</span>
+                </div>
+            </div>
+
+            <div class="advanced_search_item">
+                <label for="none_of_these_words">none of these words:</label>
+                <input type="text" name="none_of_these_words" id="none_of_these_words">
+                <div class="searchtip">
+                    Put a minus sign just before words that you don't want: 
+                    <span class="search_tip_code">-rodent -"Jack Russell"</span>
+                </div>
+            </div>
+
+            <hr>
+
+
         </div>
     </main>
 
     <footer>
         <ul>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Advertising</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Business</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">How Search Works</a></li>
-        </ul>
-
-        <ul>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Privacy</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Terms</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Settings</a></li>
+            <li><a href="" target="_blank">Privacy</a></li>
+            <li><a href="" target="_blank">Terms</a></li>
+            <li><a href="" target="_blank">Settings</a></li>
         </ul>
     </footer>
-
-    <script>
-        const search = document.getElementById('search');
-        const searchbtn = document.querySelector('.searchbtn');
-        const luckybtn = document.querySelector('.luckybtn');
-
-        searchbtn.addEventListener('click', () => {
-            // direct user to google search page with the user input
-            window.location.href = `https://www.google.com/search?q=${search.value}`;
-        });
-
-        luckybtn.addEventListener('click', () => {
-            // direct user to google search page with the user input and the "I'm feeling lucky" button
-            window.location.href = `https://www.google.com/search?q=${search.value}&btnI`;
-        });
-    </script>
 </body>
 </html>

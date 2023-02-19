@@ -11,8 +11,7 @@
     
     <header>
         <ul>
-            <li><a href="advancedsearch.html">Advanced Search</a></li>
-            <li><a href="imagesearch.html">Image Search</a></li>
+            <li><a href="index.html">Home</a></li>
         </ul>
     </header>
     
@@ -20,48 +19,37 @@
         <div class="logo">
             <img src="images/logo.png" alt="logo">
         </div>
-        <div class="searchcontainer">
-            
+        <div class="searchcontainer">            
             <div class="search">
-                <form action="https://www.google.com/search?">
-                    <input type="text" name="q" id="search" autofocus="on">
+                <form method="get" action="https://www.google.com/search">
+                    <input type="text" name="q" id="search_text_input" autofocus="on">
+                    <input type="hidden" name="tbm" value="isch">
                 </form>
             </div>
         </div>
-        
-        <div class="buttons">
-            <button class="searchbtn">Google Search</button>
-            <button class="luckybtn">I'm Feeling Lucky</button>
-        </div>
     </main>
+    
 
     <footer>
         <ul>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Advertising</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Business</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">How Search Works</a></li>
+            <li><a href="" target="_blank">Advertising</a></li>
+            <li><a href="" target="_blank">Business</a></li>
+            <li><a href="" target="_blank">How Search Works</a></li>
         </ul>
 
         <ul>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Privacy</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Terms</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Settings</a></li>
+            <li><a href="" target="_blank">Privacy</a></li>
+            <li><a href="" target="_blank">Terms</a></li>
+            <li><a href="" target="_blank">Settings</a></li>
         </ul>
     </footer>
 
     <script>
-        const search = document.getElementById('search');
+        const search = document.getElementById('search_text_input');
         const searchbtn = document.querySelector('.searchbtn');
-        const luckybtn = document.querySelector('.luckybtn');
 
         searchbtn.addEventListener('click', () => {
-            // direct user to google search page with the user input
-            window.location.href = `https://www.google.com/search?q=${search.value}`;
-        });
-
-        luckybtn.addEventListener('click', () => {
-            // direct user to google search page with the user input and the "I'm feeling lucky" button
-            window.location.href = `https://www.google.com/search?q=${search.value}&btnI`;
+            window.location.href = `https://www.google.com/search?tbm=isch&q=${search.value}`;
         });
     </script>
 </body>

@@ -21,7 +21,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: flex-start;
     height: 100vh;
     padding-top: 70px;
@@ -72,7 +72,7 @@ img {
     height: 92px;
 }
 
-#search {
+#search_text_input {
     min-width: 443px;
     width: 100%;
     height: 100%;
@@ -122,3 +122,80 @@ button:hover {
     box-shadow: 0 1px 1px rgba(0,0,0,.1),0 1px 1px rgba(0,0,0,.1);
 }
 
+.advancedsearch {
+    display: inline;
+    justify-self: left;
+    font-family: arial, sans-serif;
+}
+
+.advanced_search_title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #d93025;
+    margin: 20px 40px;
+}
+
+.advanced_search_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 35px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #3c4043;
+    line-height: 16px;
+}
+
+.find_pages_with {
+    margin: 0 35px;
+}
+
+.advanced_search_item input {
+    position: absolute;
+    left: 215px;
+    max-width: 515px;
+    width: 100%;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    padding: 1px 8px;
+    text-align: left;
+}
+
+.advanced_search_item input:hover {
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1),0 1px 1px rgba(0,0,0,.1);
+}
+
+.advanced_logo {
+    width: 74px;
+    height: 24px;
+    margin: 20px;
+}
+
+.advanced_header {
+    justify-content: space-between;
+}
+
+.searchtip {
+    position: absolute;
+    left: 760px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.search_tip_code {
+    font-size: 11px;
+    font-weight: 400;
+    font-family: monospace;
+}
+
+@media screen and (max-width: 1070px) {
+    .searchtip {
+        display: none;
+    }
+}

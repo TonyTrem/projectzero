@@ -24,7 +24,7 @@
             
             <div class="search">
                 <form action="https://www.google.com/search?">
-                    <input type="text" name="q" id="search" autofocus="on">
+                    <input type="text" name="q" id="search_text_input" autofocus="on">
                 </form>
             </div>
         </div>
@@ -37,32 +37,31 @@
 
     <footer>
         <ul>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Advertising</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Business</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">How Search Works</a></li>
+            <li><a href="" target="_blank">Advertising</a></li>
+            <li><a href="" target="_blank">Business</a></li>
+            <li><a href="" target="_blank">How Search Works</a></li>
         </ul>
 
         <ul>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Privacy</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Terms</a></li>
-            <li><a href="https://www.google.com/intl/en/about/products?tab=wh" target="_blank">Settings</a></li>
+            <li><a href="" target="_blank">Privacy</a></li>
+            <li><a href="" target="_blank">Terms</a></li>
+            <li><a href="" target="_blank">Settings</a></li>
         </ul>
     </footer>
 
     <script>
-        const search = document.getElementById('search');
+        const search = document.getElementById('search_text_input');
         const searchbtn = document.querySelector('.searchbtn');
         const luckybtn = document.querySelector('.luckybtn');
 
         searchbtn.addEventListener('click', () => {
-            // direct user to google search page with the user input
             window.location.href = `https://www.google.com/search?q=${search.value}`;
         });
 
         luckybtn.addEventListener('click', () => {
-            // direct user to google search page with the user input and the "I'm feeling lucky" button
             window.location.href = `https://www.google.com/search?q=${search.value}&btnI`;
         });
     </script>
+    
 </body>
 </html>
