@@ -20,18 +20,14 @@
     
     <main class="advanced_main">
         <div class="advancedsearch">
+            <div class="advanced_search_title">
+                Advanced Search
+            </div> 
             <table>
                 <tr>
                     <td>
-                        <div class="advanced_search_title">
-                            Advanced Search
-                        </div> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                         <div class="find_pages_with">
-                            Find pages with...<span class="searchtip">To do this in the search box</span>
+                            Find pages with...<span class="searchtip">To do this in the search box.</span>
                         </div>
                     </td>
                 </tr>
@@ -85,6 +81,9 @@
                     </td>
                 </tr>
             </table>
+            <div class="advanced_search_button">
+                <button>Search</button>
+            </div>
         </div>
     </main>
 
@@ -95,5 +94,22 @@
             <li><a href="" target="_blank">Settings</a></li>
         </ul>
     </footer>
+
+    <script>
+        document.querySelector("button").addEventListener("click", function() {
+            let all_these_words = document.querySelector("#all_these_words").value;
+            let this_exact_word_or_phrase = document.querySelector("#this_exact_word_or_phrase").value;
+            let any_of_these_words = document.querySelector("#any_of_these_words").value;
+            let none_of_these_words = document.querySelector("#none_of_these_words").value;
+
+            let search = all_these_words + " " + '"' + this_exact_word_or_phrase + '"' + " " + any_of_these_words + " " + '-"' + none_of_these_words + '"';
+            window.location.href = "https://www.google.com/search?q=" + search;
+
+        });
+        
+
+
+    </script>
+
 </body>
 </html>

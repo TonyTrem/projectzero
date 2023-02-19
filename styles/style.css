@@ -24,7 +24,6 @@ main {
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
-    padding-top: 70px;
 }
 
 footer {
@@ -132,7 +131,7 @@ button:hover {
     font-size: 20px;
     font-weight: 400;
     color: #d93025;
-    margin: 20px 40px;
+    margin: 15px 40px 30px;
 }
 
 .advanced_search_item {
@@ -203,6 +202,15 @@ tr,
 table {
     padding: 0;
     margin: 0;
+}
+
+.find_pages_with {
+    margin-bottom: 10px;
+}
+
+span.searchtip {
+    font-weight: 900;
+    font-size: 13px;
 }
 
 @media screen and (max-width: 1070px) {
