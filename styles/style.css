@@ -21,7 +21,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: flex-start;
     height: 100vh;
     padding-top: 70px;
@@ -165,12 +165,6 @@ button:hover {
     text-align: left;
 }
 
-.advanced_search_item input:hover {
-    border: 1px solid #d9d9d9;
-    border-top: 1px solid #c0c0c0;
-    box-shadow: 0 1px 1px rgba(0,0,0,.1),0 1px 1px rgba(0,0,0,.1);
-}
-
 .advanced_logo {
     width: 74px;
     height: 24px;
@@ -179,6 +173,10 @@ button:hover {
 
 .advanced_header {
     justify-content: space-between;
+}
+
+.advanced_main {
+    align-items: start;
 }
 
 .searchtip {
